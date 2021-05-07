@@ -1,10 +1,10 @@
-# This Program for check issabel CDR Report for call destination 900*
+# Checking Issabel CDR For 900* Call Destination
 
-1. copy all file on /var/www/html on issabel with WinSCP
+1. Copy all downloaded file in "/var/www/html" directory on issabel
 
-2. set permission 775 or 777 to all files with WinSCP or Linux CLI
+2. Set "775" or "777" permission to all downloaded files
 
-3. go to /var/www/html directory
+3. Go to "/var/www/html" directory
 
 ``` bash script
 
@@ -12,28 +12,28 @@ cd /var/www/html
 
 ```
 
-4. open file checkcdr00.php and give it database user and pass and save it
+4. Open "checkcdr00.php" and set issabel database username and password and save
 ``` php
 $username = "root";
 $password = "pass_of_root";
 ```
-5. open file mail.php file and set emails on it
-  - issabel@gmail.com is issabel Gmail for send mail to admin@yahoo.com
+5. Open "mail.php" and set an gmail account (note: issabel only work with gmail)
+  - "example@gmail.com" is issabel email address that sends reports to "example@example.example"
 ```php
-$mail->Username = "issabel@gmail.com";                 
+$mail->Username = "example@gmail.com";                 
 $mail->Password = "pass_of_issabel_Gmail";
-$mail->From = "issabel@gmail.com";
-$mail->addAddress("admin@yahoo.com", "Recepient Name");
+$mail->From = "example@gmail.com";
+$mail->addAddress("example@example.example", "Recepient Name");
 ```
 
-6. Go to the issabel@gmail.com Gmail (Manage your Google Account) then go to the Security and Less Secure app access and enable it
+6. On to the "example@gmail.com" google account setting security tab, enable "Less Secure app access"
 
-7. run file checkcdr00.sh
+7. Run "checkcdr00.sh"
 ``` bash
 ./checkcdr00.sh
 ```
 
-## for automatic daily run on crontab
+## Using "crontab" for automatic daily report
 ```bash
 crontab -e
 0 1 * * * /var/www/html/checkcdr00.sh
