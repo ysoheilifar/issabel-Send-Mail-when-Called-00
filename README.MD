@@ -17,7 +17,7 @@ cd /var/www/html
 $username = "root";
 $password = "pass_of_root";
 ```
-5. Open "mail.php" and set an gmail account (note: issabel only work with gmail)
+5. Open "zarbin_mail.php" and set an gmail account (note: issabel only work with gmail)
   - "example@gmail.com" is issabel email address that sends reports to "example@example.example"
 ```php
 $mail->Username = "example@gmail.com";                 
