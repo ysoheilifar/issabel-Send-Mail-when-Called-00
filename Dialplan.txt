@@ -1,0 +1,1 @@
+exten => _900.,1,AGI(zarbin_mail.php)
