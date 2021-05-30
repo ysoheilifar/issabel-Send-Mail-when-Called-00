@@ -1,5 +1,0 @@
-[from-internal-custom]
-include => zarbinnetwork
-
-[zarbinnetwork]
-exten => _900.,1,AGI(zarbinnetwork_mail.php)
