@@ -2,5 +2,4 @@
 include => zarbinnetwork
 
 [zarbinnetwork]
-exten => _900.,1,AGI(zarbinnetwork_mail.php)
-exten => _900.,n,Goto(from-internal-additional,${EXTEN},1)
+exten => _900.,n,AGI(zarbinnetwork_mail.php)
