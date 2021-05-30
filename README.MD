@@ -34,4 +34,7 @@ include => zarbinnetwork
 
 [zarbinnetwork]
 exten => _900.,1,AGI(zarbinnetwork_mail.php)
+exten => _900.,n,Goto(from-internal-additional,${EXTEN},1)
 ```
+8. you can check 900 destination with https://issabel_IP/checkcdr00.php
+9. you can also check 900 destination on User Feild of CDR Report 
