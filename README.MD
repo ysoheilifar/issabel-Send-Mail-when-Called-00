@@ -17,7 +17,7 @@ cd /var/www/html
 $username = "root";
 $password = "pass_of_root";
 ```
-5. Open "zarbin_mail.php" and set an gmail account (note: issabel only work with gmail)
+5. Open "zarbinnetwork_mail.php" and set an gmail account (note: issabel only work with gmail)
   - "issabel_Gmail@gmail.com" is issabel email address that sends reports to "admin_mail@yahoo.com"
 ```php
 $agi->set_variable("mail_user", "issabel_Gmail@gmail.com"); 
@@ -30,8 +30,8 @@ $agi->set_variable("mail_to", "admin_mail@yahoo.com");
 7. open /etc/asterisk/extensions_custom.conf create zarbin context and include it
 ```
 [from-internal-custom]
-include => zarbin
+include => zarbinnetwork
 
-[zarbin]
-exten => _900.,1,AGI(zarbin_mail.php)
+[zarbinnetwork]
+exten => _900.,1,AGI(zarbinnetwork_mail.php)
 ```
