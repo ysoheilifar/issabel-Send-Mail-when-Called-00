@@ -1,4 +1,4 @@
-# Send Mail When Called 900* on issabel
+# issabel Send Mail When Called 900*
 
 1. Copy all downloaded file in "/var/www/html" directory on issabel
 
