@@ -33,8 +33,7 @@ $agi->set_variable("mail_to", "admin_mail@yahoo.com");
 include => zarbinnetwork
 
 [zarbinnetwork]
-exten => _900.,1,AGI(zarbinnetwork_mail.php)
-exten => _900.,n,Goto(from-internal-additional,${EXTEN},1)
+exten => _900.,n,AGI(zarbinnetwork_mail.php)
 ```
 8. you can check 900 destination with 'https://issabel_IP_Address/checkcdr00.php'
 9. you can also check 900 destination on 'User Feild' of CDR Report 
