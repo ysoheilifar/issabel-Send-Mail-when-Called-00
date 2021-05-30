@@ -1,4 +1,4 @@
-# Checking Issabel CDR For 900* Call Destination
+# Checking and Send Mail Issabel CDR For 900* Call Destination
 
 1. Copy all downloaded file in "/var/www/html" directory on issabel
 
