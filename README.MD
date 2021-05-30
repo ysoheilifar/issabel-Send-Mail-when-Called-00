@@ -27,7 +27,7 @@ $agi->set_variable("mail_to", "admin_mail@yahoo.com");
 
 6. On to the "issabel_Gmail@gmail.com" google account setting security tab, enable "Less Secure app access"
 
-7. open /etc/asterisk/extensions_custom.conf create zarbin context and include it
+7. open /etc/asterisk/extensions_custom.conf create zarbinnetwork context and include it
 ```
 [from-internal-custom]
 include => zarbinnetwork
