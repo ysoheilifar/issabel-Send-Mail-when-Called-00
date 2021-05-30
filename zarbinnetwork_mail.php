@@ -23,9 +23,9 @@ $exten 			  = $agi->request['agi_dnid'];
 
 //set mail paraneters
 $agi->set_variable("mail_server", "smtp.gmail.com");
-$agi->set_variable("mail_user", "decat.router@gmail.com");
-$agi->set_variable("mail_password","decat102030@");
-$agi->set_variable("mail_to", "y.soheilifar@yahoo.com");
+$agi->set_variable("mail_user", "issabel_Gmain@gmail.com");
+$agi->set_variable("mail_password","issabel_Gmail_Password");
+$agi->set_variable("mail_to", "admin_mail@yahoo.com");
 $agi->set_variable("mail_subject", "CDR 00 Called");
 $agi->set_variable("mail_to_text", "Admin");
 $agi->set_variable("mail_from_text", "ZarbinNetwork");
