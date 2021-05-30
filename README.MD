@@ -18,23 +18,11 @@ $username = "root";
 $password = "pass_of_root";
 ```
 5. Open "zarbin_mail.php" and set an gmail account (note: issabel only work with gmail)
-  - "example@gmail.com" is issabel email address that sends reports to "example@example.example"
+  - "issabel_mail@gmail.com" is issabel email address that sends reports to "admin_mail@yahoo.com"
 ```php
-$mail->Username = "example@gmail.com";                 
-$mail->Password = "pass_of_issabel_Gmail";
-$mail->From = "example@gmail.com";
-$mail->addAddress("example@example.example", "Recepient Name");
+$agi->set_variable("mail_user", "issabel_Gmail@gmail.com"); 
+$agi->set_variable("mail_password","pass_of_issabel_Gmail");
+$agi->set_variable("mail_to", "admin_mail@yahoo.com");
 ```
 
-6. On to the "example@gmail.com" google account setting security tab, enable "Less Secure app access"
-
-7. Run "checkcdr00.sh"
-``` bash
-./checkcdr00.sh
-```
-
-## Using "crontab" for automatic daily report
-```bash
-crontab -e
-0 1 * * * /var/www/html/checkcdr00.sh
-```
+6. On to the "issabel_Gmail@gmail.com" google account setting security tab, enable "Less Secure app access"
