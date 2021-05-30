@@ -18,7 +18,7 @@ $username = "root";
 $password = "pass_of_root";
 ```
 5. Open "zarbin_mail.php" and set an gmail account (note: issabel only work with gmail)
-  - "issabel_mail@gmail.com" is issabel email address that sends reports to "admin_mail@yahoo.com"
+  - "issabel_Gmail@gmail.com" is issabel email address that sends reports to "admin_mail@yahoo.com"
 ```php
 $agi->set_variable("mail_user", "issabel_Gmail@gmail.com"); 
 $agi->set_variable("mail_password","pass_of_issabel_Gmail");
